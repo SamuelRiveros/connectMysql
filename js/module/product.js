@@ -1,6 +1,7 @@
-import { connection } from "./connection.js";
+import { connection } from "../../db/connection.js";
 
-export const getAllProductsDescription = async() =>{
-    let [result] = await connection.query('SELECT productLine, productDescription from products;')
-    return result
+// Recuperar todas las líneas de productos con sus descripciones
+export const getAllProductsDescription = async()=>{
+    let [result] = await connection.query(`SELECT productLine, productDescription FROM products`);
+    return result;
 }
