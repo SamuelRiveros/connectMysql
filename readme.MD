@@ -5,7 +5,7 @@
 1. **Recuperar todas las líneas de productos con sus descripciones:**
 
    ```sql
-   select * from products
+   select productLine, productDescription from products
    ```
 
 2. **Encontrar todos los empleados que trabajan en la oficina de 'San Francisco':**
@@ -37,7 +37,7 @@
 1. **Listar todos los productos junto con las descripciones de sus líneas de productos:**
 
    ```sql
-   select * from products --mirar
+  select products.productCode, products.productName, productlines.textDescription from products join productlines on products.productLine = productlines.productLine;
    ```
 
 2. **Obtener los nombres y direcciones de correo electrónico de los empleados que reportan al empleado con el número de empleado 1143:**
