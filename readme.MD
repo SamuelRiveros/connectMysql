@@ -140,7 +140,6 @@ SELECT jobTitle, COUNT(*) AS cantidad_empleados FROM employees GROUP BY jobTitle
 
    ```sql
    SELECT customerNumber, SUM(amount) AS total_pagos FROM payments GROUP BY customerNumber;
-
    ```
 
 2. **Obtener el promedio del límite de crédito de los clientes por país:**
