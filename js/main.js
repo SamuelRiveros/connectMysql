@@ -11,7 +11,7 @@ import {getAllQuantityOfficesForEachCountry, TotalSalesPerOffice} from "./module
 
 import {TotalPaymentAmmountFromCustomer, getTotalPayments, getTotalPaymentsFromEachCustomer, getTotalPaymentsForEachCountry, getTotalPaymentsForEachSeller, getTotalPaymentsEachYear} from "./module/payments.js"
 
-import {AverageQuantityProductsInStockByProductsLine, AverageBuyPriceProductsByProductsLine, AverageBuyPriceProductsForEachCustomer, getAverageBuyPriceProductsByProductLine} from "./module/productLines.js"
+import {AverageQuantityProductsInStockByProductsLine, AverageBuyPriceProductsfromProductsLine, AverageBuyPriceProductsForEachCustomer, getAverageBuyPriceProductsByProductLine} from "./module/productLines.js"
 
 import {GetAllShippedOrders, AllOrdersByCustomersCountry, AllDetailsOrdersByCustomerNumber, TotalOrdersFromEachCustomer, getTotalSalesForEachCustomer, TotalSalesFromEachCountry} from "./module/orders.js"
 

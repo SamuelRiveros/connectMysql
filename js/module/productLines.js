@@ -7,7 +7,7 @@ export const AverageQuantityProductsInStockByProductsLine= async()=>{
 }
 
 //Obtener el promedio del precio de compra de los productos por línea de productos
-export const AverageBuyPriceProductsByProductsLine= async()=>{
+export const AverageBuyPriceProductsfromProductsLine= async()=>{
     let [result] = await connection.query(`SELECT products.productLine, AVG(products.buyPrice) AS PromedioDeprecioDeCompra FROM products GROUP BY products.productLine;`);
     return result;
 }
